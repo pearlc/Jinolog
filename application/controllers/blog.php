@@ -8,7 +8,7 @@ class Blog extends CI_Controller {
 
 	function index() {
 		$data["title"] = "My Blog Title";
-		$data["header_message"] = "Testt Header Message";
+		$data["header_message"] = "Header Message";
 		$data["footer_message"] = "Footer Message";
 
 		$data["main_content"] = "";
