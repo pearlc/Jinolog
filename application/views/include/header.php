@@ -10,4 +10,8 @@
     <!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
 </head>
 <body>
-	<h1><?=$header_message?></h1>
+	<div class="container">
+	<header>
+	<h1 id="logo"><a href="" title="Link to main page"><img src="image/logo.gif" alt="jinolog logo"></img></a></h1>
+	<hr class="thick" />
+	</header>

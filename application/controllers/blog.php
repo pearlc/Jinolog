@@ -7,8 +7,7 @@ class Blog extends CI_Controller {
 	}
 
 	function index() {
-		$data["title"] = "My Blog Title";
-		$data["header_message"] = "More test Header Message";
+		$data["title"] = "Jinolog";
 		$data["footer_message"] = "Footer Message";
 
 		$data["main_content"] = "";
@@ -20,8 +19,7 @@ class Blog extends CI_Controller {
 	}
 
 	function comments() {
-		$data["title"] = "My Comment Title";
-		$data["header_message"] = "Header Message";
+		$data["title"] = "Jinolog";
 		$data["footer_message"] = "Footer Message";
 
 		$data["main_content"] = "";
@@ -37,6 +35,10 @@ class Blog extends CI_Controller {
 		$this->db->insert("comments", $_POST);
 
 		redirect("blog/comments/".$_POST["entry_id"]);
+	}
+
+	function _output($output) {
+		echo $output.".";
 	}
 }
 ?>
