@@ -7,6 +7,13 @@ class Blog extends CI_Controller {
 	}
 
 	function index() {
+		// ¿¹½Ã setcookie ( string $name , string $value , int $expire = 0 , string $path , string $domain , bool $secure = false , bool $httponly = false )
+//		setCookie("name1", "value1", mktime()+3600, "/", "", false, true);
+		setCookie("name2", "value2", mktime()+3600, "/a");
+
+		setCookie("name1", "value1", mktime()-10);
+//		setCookie("name2", "value2", mktime()-10);
+
 		$data["title"] = "Jinolog";
 		$data["footer_message"] = "Footer Message";
 
@@ -14,6 +21,12 @@ class Blog extends CI_Controller {
 		$data["main_content_filename"] = "blog_view.php";
 
 		$data["query"] = $this->db->get("entries");
+
+		if (isset($_COOKIE)) {
+			foreach($_COOKIE as $k => $v) {
+				$data["ck"][$k] = $v;
+			}
+		}
 
 		$this->load->view('template', $data);
 	}
