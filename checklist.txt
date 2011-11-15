@@ -1,1 +1,12 @@
 검색창 클릭하면 검색창 늘어남 : 스택오버플로 처럼
+검색창의 버튼은 "검색" 으로 할것
+사이드바 접는 버튼 border 둥글게 처리
+사이드바 검색 버튼은 없애기
+
+
+포스팅 첫페이지에서 페이징 할것인가?
+포스트 개수가 모자라서 Footer가 사이드바 보다 위에 올라와 있는게 맞는가 아니면 사이드바보다 항상 아래쪽에 위치히는게 맞는가?
+
+
+사이드바 에서 글자 개수 넘치면 쩜쩜쩜으로 표시
+http://www.orangeday.co.kr/blog/entry/text-overflowellipsis-%EB%AC%B8%EB%8B%A8%EC%9D%B4-%EA%B8%B8%EC%96%B4%EC%A7%80%EB%A9%B4-%EC%A0%90%EC%9C%BC%EB%A1%9C-%ED%91%9C%ED%98%84?category=0
