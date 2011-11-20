@@ -44,6 +44,11 @@ class Blog extends CI_Controller {
 		$this->load->view('template', $data);
 	}
 
+	function test_view() {
+		$data =array();
+		$this->load->view('test_view', $data);
+	}
+
 	function comment_insert() {
 		$this->db->insert("comments", $_POST);
 
